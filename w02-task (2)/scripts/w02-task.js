@@ -1,29 +1,51 @@
-/* W02-Task - Profile Home Page */
+/* Lesson 2 */
 
-/* Step 1 - Setup type tasks - no code required */
+/* VARIABLES */
 
-/* Step 2 - Variables */
+// Step 1: declare and instantiate a variable to hold your name
+let name = 'Zackary Sinclair';
 
-
-
-
-/* Step 3 - Element Variables */
+document.querySelector('#name').textContent = name;
 
 
+let year = 2024;
 
 
-
-/* Step 4 - Adding Content */
-
-
+let currentYear = document.getElementById('year');
+currentYear.textContent = year;
 
 
+let myImage = new Image;
+myImage.src = 'images/Mexico.jpg';
 
 
-/* Step 5 - Array */
+document.querySelector('img').setAttribute('src', 'images/Mexico.jpg');
+
+/* ARRAYS */
 
 
+const foods = [' Burritos', ' Sushi', ' Tacos', ' Hamburgers']
 
 
+let food = document.getElementById('food');
+food.textContent = foods;
 
 
+let anotherFood = "Yogurt"
+
+
+foods.push(anotherFood);
+
+
+food.textContent = foods;
+
+foods.shift();
+
+
+food.textContent = foods;
+
+
+foods.pop();
+
+
+food.textContent = foods;
